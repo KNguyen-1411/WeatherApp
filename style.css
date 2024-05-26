@@ -88,13 +88,16 @@ body{
 }
 .add{
     position: relative;
-    top: 80px;
+    top: 75px;
     left: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 70px;
+    height: 45px;
     text-align: left;
+}
+.item{
+    font-size: 14px;
 }
 span{
     margin-right: 6px;
@@ -113,6 +116,6 @@ h5{
 }
 hr{
     position: relative;
-    top: 70px;
+    top: 60px;
     width: 380px;
 }
