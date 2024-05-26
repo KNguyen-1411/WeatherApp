@@ -22,6 +22,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.dark{
+    background: linear-gradient(45deg,rgb(81, 124, 138),rgb(74, 97, 107));
+}
 .tim{
     width: 50%;
     display: flex;
@@ -38,6 +41,17 @@ body{
     font-size: 15px;
     position: relative;
     bottom: 2px;
+}
+#btn{
+    cursor: pointer;
+    position: absolute;
+    top :15px;
+    width: 28px;
+    font-size: 18px;
+    right: 17px;
+    border: 1px solid white;
+    padding: 4px;
+    border-radius: 50%;
 }
 .seach-icon{
     font-size: 16px;

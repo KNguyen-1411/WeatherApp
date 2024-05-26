@@ -15,8 +15,20 @@
       <i class="fa-solid fa-house home" onclick="weather(link+'Huế')"></i>
       <div class="tim">
         <i class="seach-icon fa-solid fa-magnifying-glass"></i>
-        <input id="tpinput" type="text" placeholder="Tên thành phố..">
+        <input id="tpinput" list="topics" type="text" placeholder="Tên thành phố..">
+        <datalist id="topics">
+          <option value="Huế">
+          <option value="Đà Nẵng">
+          <option value="Hà Nội">
+          <option value="Thành Phố Hồ Chí Minh">
+          <option value="Phan Thiết">
+          <option value="Sapa">
+          <option value="Cần Thơ">
+          <option value="Hà Giang">
+          <option value="Cà Mau">
+        </datalist>
       </div>
+      <i id="btn" onclick="chedo()" class="fa-solid fa-moon"></i>
       <div class="center">
         <h2 id="tp"></h2>
         <h3 id="nd"></h3>

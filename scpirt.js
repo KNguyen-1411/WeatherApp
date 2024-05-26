@@ -44,3 +44,13 @@ async function weather(link){
     print(data);
 }
 weather(link+"Huế");
+
+
+const body = document.getElementsByClassName("main");
+const btn = document.getElementById("btn");
+
+function chedo() {
+    body[0].classList.toggle("dark");
+    btn.classList.toggle("fa-moon");
+    btn.classList.toggle("fa-sun");
+}
