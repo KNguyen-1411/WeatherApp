@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: grey;
+}
+.container{
+    position: relative;
+}
+.main{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 380px;
+    height: 600px;
+    background: linear-gradient(45deg,rgb(15, 174, 228),rgb(20, 149, 208));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tim{
+    width: 50%;
+    display: flex;
+    padding-top: 15px;
+    margin-bottom: 50px;
+    position: relative;
+    border-bottom: 1px solid white;
+}
+.tim input{
+    outline: 0;
+    border:  none;
+    padding: 2px 2px 2px 20px;
+    background: transparent;
+    font-size: 15px;
+    position: relative;
+    bottom: 2px;
+}
+.seach-icon{
+    font-size: 16px;
+}
+.tim input::placeholder{
+    color: white;
+}
+#tt{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+#kn{
+    position: absolute;
+    font-size: 10px;
+    bottom: 5px;
+    right: 10px;
+    color: rgba(240, 248, 255,0.8);
+}
+.home{
+    cursor: pointer;
+    position: absolute;
+    top :14px;
+    left: 18px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.add{
+    position: relative;
+    top: 80px;
+    left: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 70px;
+    text-align: left;
+}
+span{
+    margin-right: 6px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    margin-top: 10px;
+    font-size: 90px;
+}
+h5{
+    margin-top: 15px;
+    font-size: 25px;
+}
+hr{
+    position: relative;
+    top: 70px;
+    width: 380px;
+}

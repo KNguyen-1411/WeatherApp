@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <i class="fa-solid fa-house home" onclick="weather(link+'Huế')"></i>
+      <div class="tim">
+        <i class="seach-icon fa-solid fa-magnifying-glass"></i>
+        <input id="tpinput" type="text" placeholder="Tên thành phố..">
+      </div>
+      <div class="center">
+        <h2 id="tp"></h2>
+        <h3 id="nd"></h3>
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" id="icon" alt="">
+        <h5 id="tt"></h5>
+        <div class="kc">
+          <span>Feel likes:</span>
+          <span id="ndcn"></span>
+          <span id="space"></span>
+          <span>Độ ẩm:</span>
+          <span id="doam"></span>
+        </div>
+        <hr>
+        <div class="add">
+          <div class="item">
+            <span class="h">MT Mọc:</span>
+            <span id="value-m"></span>
+          </div>
+          <div class="item">
+            <span class="h">MT Lặn:</span>
+            <span id="value-l"></span>
+          </div>
+          <div class="item">
+            <span class="h">Tốc độ gió:</span>
+            <span id="value-s"></span>
+          </div>
+          <div class="item">
+            <span class="h">Tầm nhìn xa:</span>
+            <span id="value-t">1</span>
+          </div>
+        </div>
+        <div id="kn">By Khanh Nguyen</div>
+      </div>
+    </div>
+  </div>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="scpirt.js"> </script>
+</body>
+
+</html>
