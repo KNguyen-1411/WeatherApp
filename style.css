@@ -11,9 +11,6 @@
 body{
     background-color: grey;
 }
-.container{
-    position: relative;
-}
 .main{
     position: relative;
     margin: 0 auto;
@@ -21,24 +18,26 @@ body{
     width: 380px;
     height: 600px;
     background: linear-gradient(45deg,rgb(15, 174, 228),rgb(20, 149, 208));
-    text-align: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
 }
 .dark{
     background: linear-gradient(45deg,rgb(81, 124, 138),rgb(74, 97, 107));
 }
+.top{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between ;
+}
 .tim{
     width: 50%;
     display: flex;
-    padding-top: 15px;
     margin-bottom: 50px;
     position: relative;
     border-bottom: 1px solid white;
-}
-#nd{
-    padding-left: 40px;
 }
 .tim input{
     outline: 0;
@@ -49,26 +48,39 @@ body{
     position: relative;
     bottom: 2px;
 }
-#btn{
-    cursor: pointer;
-    position: absolute;
-    top :15px;
-    width: 28px;
-    font-size: 18px;
-    right: 17px;
-    border: 1px solid white;
-    padding: 4px;
-    border-radius: 50%;
-}
-.seach-icon{
-    font-size: 16px;
-}
 .tim input::placeholder{
     color: white;
 }
-#tt{
-    margin-bottom: 20px;
-    text-transform: capitalize;
+.center{
+    height: 420px;
+}
+.center span{
+    margin-right: 6px;
+}
+.center h2{
+    font-weight: 1-22;
+    font-size: 40px;
+}
+.center h3{
+    margin-top: 10px;
+    font-size: 80px;
+}
+.center h5{
+    margin:10px 0 15px 0;
+    font-size: 25px;
+}
+.bottom{
+    padding-top: 5px;
+    border-top: 1px solid white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 5px;
+}
+.item{
+    display: flex;
+    padding-left: 20px;
 }
 #kn{
     position: absolute;
@@ -77,45 +89,20 @@ body{
     right: 10px;
     color: rgba(240, 248, 255,0.8);
 }
-.home{
+.home,#btn{
     cursor: pointer;
-    position: absolute;
-    top :14px;
-    left: 18px;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    right: 17px;
     border: 1px solid white;
-    padding: 5px;
+    padding: 3.5px;
     border-radius: 50%;
 }
-.add{
-    position: relative;
-    top: 75px;
-    left: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 45px;
-    text-align: left;
+#btn{
+    font-size: 20px;
 }
-.item{
-    font-size: 14px;
-}
-span{
-    margin-right: 6px;
-}
-h2{
-    font-weight: 1-22;
-    font-size: 40px;
-}
-h3{
-    margin-top: 10px;
-    font-size: 80px;
-}
-h5{
-    margin-top: 15px;
-    font-size: 25px;
-}
-hr{
-    position: relative;
-    top: 60px;
-    width: 380px;
+.h{
+    color: rgb(255, 255, 255);
+    margin-right: 3px;
 }

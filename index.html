@@ -9,29 +9,33 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <div class="main">
-      <i class="fa-solid fa-house home" onclick="weather(link+'Huế')"></i>
-      <div class="tim">
-        <i class="seach-icon fa-solid fa-magnifying-glass"></i>
-        <input id="tpinput" list="topics" type="text" placeholder="Tên thành phố..">
-        <datalist id="topics">
-          <option value="Huế">
-          <option value="Đà Nẵng">
-          <option value="Hà Nội">
-          <option value="Thành Phố Hồ Chí Minh">
-          <option value="Phan Thiết">
-          <option value="Sapa">
-          <option value="Cần Thơ">
-          <option value="Hà Giang">
-          <option value="Cà Mau">
-        </datalist>
+      <div class="top">
+        <i class="fa-solid fa-house home" onclick="weather(link+'Huế')"></i>
+        <div class="tim">
+          <i class="seach-icon fa-solid fa-magnifying-glass"></i>
+          <input id="tpinput" list="topics" type="text" placeholder="Tên thành phố..">
+          <datalist id="topics">
+            <option value="Huế">
+            <option value="Đà Nẵng">
+            <option value="Hà Nội">
+            <option value="Thành Phố Hồ Chí Minh">
+            <option value="Phan Thiết">
+            <option value="Sapa">
+            <option value="Cần Thơ">
+            <option value="Hà Giang">
+            <option value="Cà Mau">
+          </datalist>
+        </div>
+        <i id="btn" onclick="chedo()" class="fa-solid fa-moon"></i>
       </div>
-      <i id="btn" onclick="chedo()" class="fa-solid fa-moon"></i>
       <div class="center">
         <h2 id="tp"></h2>
         <h3 id="nd"></h3>
@@ -44,8 +48,8 @@
           <span>Độ ẩm:</span>
           <span id="doam"></span>
         </div>
-        <hr>
-        <div class="add">
+      </div>
+      <div class="bottom">
           <div class="item">
             <span class="h">MT Mọc:</span>
             <span id="value-m"></span>
@@ -61,10 +65,9 @@
           <div class="item">
             <span class="h">Tầm nhìn xa:</span>
             <span id="value-t">1</span>
-          </div>
         </div>
-        <div id="kn">By Khanh Nguyen</div>
       </div>
+      <div id="kn">By Khanh Nguyen</div>
     </div>
   </div>
   <script src="https://momentjs.com/downloads/moment.js"></script>
