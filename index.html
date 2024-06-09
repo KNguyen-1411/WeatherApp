@@ -15,60 +15,58 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="main">
-      <div class="top">
-        <i class="fa-solid fa-house home" onclick="weather(link+'Huế')"></i>
-        <div class="tim">
-          <i class="seach-icon fa-solid fa-magnifying-glass"></i>
-          <input id="tpinput" list="topics" type="text" placeholder="Tên thành phố..">
-          <datalist id="topics">
-            <option value="Huế">
-            <option value="Đà Nẵng">
-            <option value="Hà Nội">
-            <option value="Thành Phố Hồ Chí Minh">
-            <option value="Phan Thiết">
-            <option value="Sapa">
-            <option value="Cần Thơ">
-            <option value="Hà Giang">
-            <option value="Cà Mau">
-          </datalist>
-        </div>
-        <i id="btn" onclick="chedo()" class="fa-solid fa-moon"></i>
+  <div class="main">
+    <div class="top">
+      <i class="fa-solid fa-house home" onclick="weather(link+'Huế')"></i>
+      <div class="tim">
+        <i class="seach-icon fa-solid fa-magnifying-glass"></i>
+        <input id="tpinput" list="topics" type="text" placeholder="Tên thành phố..">
+        <datalist id="topics">
+          <option value="Huế">
+          <option value="Đà Nẵng">
+          <option value="Hà Nội">
+          <option value="Thành Phố Hồ Chí Minh">
+          <option value="Phan Thiết">
+          <option value="Sapa">
+          <option value="Cần Thơ">
+          <option value="Hà Giang">
+          <option value="Cà Mau">
+        </datalist>
       </div>
-      <div class="center">
-        <h2 id="tp"></h2>
-        <h3 id="nd"></h3>
-        <img src="https://openweathermap.org/img/wn/10d@2x.png" id="icon" alt="">
-        <h5 id="tt"></h5>
-        <div class="kc">
-          <span>Feel likes:</span>
-          <span id="ndcn"></span>
-          <span id="space"></span>
-          <span>Độ ẩm:</span>
-          <span id="doam"></span>
-        </div>
-      </div>
-      <div class="bottom">
-          <div class="item">
-            <span class="h">MT Mọc:</span>
-            <span id="value-m"></span>
-          </div>
-          <div class="item">
-            <span class="h">MT Lặn:</span>
-            <span id="value-l"></span>
-          </div>
-          <div class="item">
-            <span class="h">Tốc độ gió:</span>
-            <span id="value-s"></span>
-          </div>
-          <div class="item">
-            <span class="h">Tầm nhìn xa:</span>
-            <span id="value-t">1</span>
-        </div>
-      </div>
-      <div id="kn">By Khanh Nguyen</div>
+      <i id="btn" onclick="chedo()" class="fa-solid fa-moon"></i>
     </div>
+    <div class="center">
+      <h2 id="tp"></h2>
+      <h3 id="nd"></h3>
+      <img src="https://openweathermap.org/img/wn/10d@2x.png" id="icon" alt="">
+      <h5 id="tt"></h5>
+      <div class="kc">
+        <span>Feel likes:</span>
+        <span id="ndcn"></span>
+        <span id="space"></span>
+        <span>Độ ẩm:</span>
+        <span id="doam"></span>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="item">
+        <span class="h">MT Mọc:</span>
+        <span id="value-m"></span>
+      </div>
+      <div class="item">
+        <span class="h">MT Lặn:</span>
+        <span id="value-l"></span>
+      </div>
+      <div class="item">
+        <span class="h">Tốc độ gió:</span>
+        <span id="value-s"></span>
+      </div>
+      <div class="item">
+        <span class="h">Tầm nhìn xa:</span>
+        <span id="value-t">1</span>
+      </div>
+    </div>
+    <div id="kn">By Khanh Nguyen</div>
   </div>
   <script src="https://momentjs.com/downloads/moment.js"></script>
   <script src="scpirt.js"> </script>

@@ -11,17 +11,23 @@
 body{
     background-color: grey;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 .main{
-    position: relative;
+    /* position: relative; */
     margin: 0 auto;
-    margin-top: 20px;
-    width: 380px;
-    height: 600px;
+    width: calc(100%);
+    height: calc(100%);
     background: linear-gradient(45deg,rgb(15, 174, 228),rgb(20, 149, 208));
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    border-radius: 20px;
+
 }
 .dark{
     background: linear-gradient(45deg,rgb(81, 124, 138),rgb(74, 97, 107));
@@ -29,6 +35,7 @@ body{
 .top{
     margin-top: 10px;
     width: 90%;
+    height: 10%;
     display: flex;
     justify-content: space-between ;
 }
@@ -51,8 +58,11 @@ body{
 .tim input::placeholder{
     color: white;
 }
+#icon{
+    width: 150px;
+}
 .center{
-    height: 420px;
+    height: 70%;
 }
 .center span{
     margin-right: 6px;
@@ -70,7 +80,8 @@ body{
     font-size: 25px;
 }
 .bottom{
-    padding-top: 5px;
+    margin-top: 50px;
+    padding: 5px 0 20px 0;
     border-top: 1px solid white;
     width: 100%;
     display: grid;
@@ -81,6 +92,7 @@ body{
 .item{
     display: flex;
     padding-left: 20px;
+    justify-content: center;
 }
 #kn{
     position: absolute;
