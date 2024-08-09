@@ -9,16 +9,15 @@ export default function CardAbout() {
                 <Card.Body>
                     <h4>Nhiệt độ cảm nhận:</h4>
                     <h1>{weather.main.feels_like}°C</h1>
-
-                    <div className='d-flex justify-content-around'>
-                        <span className='d-flex'>
+                    <div className=''>
+                        <div className='d-flex'>
                             <span>Min:</span>
                             <span>{weather.main.temp_min}°C</span>
-                        </span>
-                        <span className='d-flex'>
+                        </div>
+                        <div className='d-flex'>
                             <span>Max:</span>
                             <span>{weather.main.temp_max}°C</span>
-                        </span>
+                        </div>
                     </div>
                 </Card.Body>
             </Card>

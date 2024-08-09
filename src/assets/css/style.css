@@ -63,15 +63,18 @@ body {
 img {
     filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
 }
-
+.pyy{
+    padding-bottom: 40px ;
+}
 .search {
     border-radius: 5px;
 }
 
-.bi-arrow-right-square-fill {
+.bi-aspect-ratio-fill {
     position: absolute;
     right: 10px;
-    top: 200px;
+    /* top: 200px; */
+    bottom: 0px;
     font-size: 30px;
     cursor: pointer;
 }

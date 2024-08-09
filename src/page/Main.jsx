@@ -21,11 +21,11 @@ export default function Main() {
     return (
         <Container fluid className='p-4 position-relative'>
             <Row className='mt-4'>
-                <Col md={4} xs={12}  className='mb-2 position-relative' >
+                <Col  xs={12}  className={` ${show ? "" : "col-md-5"} mb-2 position-relative `} >
                     <Card className={`text-center   `} >
-                        <Card.Body className='row ' style={{minHeight:'70vh'}}>
-                            <div className='d-flex col-md-0 col-12  flex-column justify-content-around '>
-                                <i class={`bi bi-arrow-right-square-fill ${show ? 'rote' : ''} `}
+                        <Card.Body className={`row ${show ? "pyy":""}`} style={{minHeight:'70vh'}}>
+                            <div className={`d-flex col-md-0 col-12 ${show?"col-md-5":""}  flex-column justify-content-around`}>
+                                <i class={`bi bi-aspect-ratio-fill ${show ? 'rote' : ''} `}
                                     onClick={() => setShow(!show)}
                                 ></i>
                                 <h2>{date}</h2>
@@ -49,13 +49,13 @@ export default function Main() {
                                     </h6>
                                 </div>
                             </div>
-                            <div className={`${show ? '' : 'd-vis '} col-md-7 col-12`}>
+                            <div className={`${show ? 'col-md-6' : 'd-vis '} col `}>
                                 <CardAbout />
                             </div>
                         </Card.Body >
                     </Card>
                 </Col>
-                <Col md={8} xs={12}  className={`h-100 add-hidden  ${show ? 'd-none' : ''} `}>
+                <Col  xs={12}  className={`h-100 add-hidden  ${show ? 'd-none ' : 'col-md-7'} `}>
                     <Row className='mb-3'>
                         <Col >
                             <Card >
