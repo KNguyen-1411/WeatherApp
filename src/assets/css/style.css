@@ -1,0 +1,251 @@
+@import 'variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-vs,
+.d-vis {
+    opacity: 0;
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, var(--theme1), var(--theme2)) !important;
+    color: var(--theme-text);
+    transition: all 0.5s;
+    /* height: 100vh; */
+}
+
+.header {
+    background-color: var(--header) !important;
+    color: var(--text);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search .bi-search {
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card {
+    background-color: var(--card) !important;
+    color: var(--theme-text);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none !important;
+}
+
+.cardbody {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.card4 {
+    background-color: transparent;
+}
+
+.card4 .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+}
+
+.search {
+    border-radius: 5px;
+}
+
+.bi-arrow-right-square-fill {
+    position: absolute;
+    right: 10px;
+    top: 200px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.rote {
+    transform: rotate(180deg);
+}
+
+.search input {
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    width: 40vw;
+    border-bottom: 2px solid var(--text) !important;
+}
+
+.search input::placeholder {
+    color: var(--text);
+    text-align: center;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: var(--text);
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+}
+
+.wtc {
+    height: 75vh;
+}
+
+.dropbtn::after {
+    content: "";
+    border-top: 0.3rem solid var(--text);
+    border-right: 0.3rem solid transparent;
+    border-bottom: 0.3rem solid transparent;
+    border-left: 0.3rem solid transparent;
+    vertical-align: 0.225rem;
+    position: absolute;
+    right: -20px;
+    top: 45%;
+}
+
+.bi-search {
+    right: 15px;
+    top: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--se);
+    color: var(--text-df);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.dropdown-content input {
+    padding: 8px;
+    background: transparent;
+    border: none;
+    color: var(--text-df);
+    outline: none;
+    border-bottom: 2px solid var(--text-df) !important;
+}
+
+.dropdown-content input::placeholder {
+    color: var(--text-df);
+}
+
+.dropdown-content button {
+    border: none;
+    width: 100%;
+    color: var(--text-df);
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+}
+
+.dropdown-content button:hover {
+    background-color: #acacac;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.media-scroll {
+    padding: 10px;
+    height: 180px;
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-template-columns: 20%; */
+    overflow-x: auto;
+}
+
+.media-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.media-scroll::-webkit-scrollbar,
+.media-srcoll-y::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background-color: transparent;
+}
+
+.media-scroll::-webkit-scrollbar-thumb,
+.media-srcoll-y::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgba(127, 208, 255, 0.475);
+    cursor: pointer;
+}
+
+.media-srcoll-y {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 20%;
+    overflow-y: auto;
+}
+
+.mediaWT {
+    display: grid;
+    grid-template-columns: 100px 200px auto 50px;
+}
+
+.mediaWT {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.579) !important;
+}
+
+.mediaWT p {
+    position: relative;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.mediaWT span {
+    position: relative;
+    top: 5%;
+}
+
+.ovl {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgb(224, 241, 93);
+    top: 30px;
+    right: -200px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.2;
+    animation: moveon 10s ease-in-out infinite;
+}
+
+@keyframes moveon {}

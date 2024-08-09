@@ -1,0 +1,23 @@
+:root {
+    --theme: #015C92;
+    --header: #769FCD;
+    --text: white;
+    --text-df: black;
+    --theme1: #619AFB;
+    --theme2: #c0c9d6;
+    --theme-text: #ffffff;
+    --card: #4889f9a2;
+    --se: white;
+}
+
+[data-theme="dark"] {
+    --theme: #333;
+    --header: #23203e;
+    --text: #d3d3d3;
+    --text-df: white;
+    --theme1: #1D2649;
+    --theme2: #4B3FAD;
+    --theme-text: #d3d3d3;
+    --card: rgba(104, 75, 231, 0.274);
+    --se: #8b97c0;
+}
