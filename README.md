@@ -1,8 +1,9 @@
-# React + Vite
+# Weather App
+Đây là một ứng dụng web được xây dựng sử dụng React, Vite, Bootstrap, và Axios. Ứng dụng này cho phép người dùng xem thông tin thời tiết của các thành phố khác nhau.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Các công nghệ được sử dụng: React + Vite, Bootstrap, Axios.
+### API được sử dụng là API của OpenWeatherMap, cung cấp dữ liệu thời tiết chi tiết cho các thành phố trên toàn thế giới.
 
-Currently, two official plugins are available:
+Ứng dụng được thiết kế với mục đích chính là giúp người dùng có thể dễ dàng xem thông tin thời tiết của các thành phố mà họ quan tâm. Với giao diện thân thiện và dễ sử dụng, ứng dụng sẽ đáp ứng được nhu cầu của nhiều người dùng.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ngày đăng: 2024-08-09
