@@ -74,8 +74,8 @@ export const StateContextProvider = ({ children }) => {
             setList(data.list);
             setLocation(data.city.name);
             //show data
-            console.log(dataWT);
-            console.log(data);
+            // console.log(dataWT);
+            // console.log(data);
         } catch (e) {
             console.error('Error fetching weather data:', e);
             alert('Không tìm thấy địa chỉ bạn nhập');

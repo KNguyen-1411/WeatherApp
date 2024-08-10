@@ -17,7 +17,7 @@ body {
     background: linear-gradient(180deg, var(--theme1), var(--theme2)) !important;
     color: var(--theme-text);
     transition: all 0.5s;
-    /* height: 100vh; */
+    min-height: 100vh;
 }
 
 .header {
@@ -144,6 +144,7 @@ img {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 10px;
+    opacity: 0.9;
 }
 
 .dropdown-content input {
@@ -219,7 +220,7 @@ img {
 
 .mediaWT {
     display: grid;
-    grid-template-columns: 100px 200px auto 50px;
+    grid-template-columns: 130px 250px auto 80px;
 }
 
 .mediaWT {

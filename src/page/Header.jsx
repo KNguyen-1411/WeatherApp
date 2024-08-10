@@ -43,6 +43,9 @@ export default function Header() {
                             <button onClick={() => setPlace('Ha noi')}>Hà nội</button>
                             <button onClick={() => setPlace('Ho Chi Minh')}>Hồ Chí Minh</button>
                             <button onClick={() => setPlace('Can Tho')}>Cần Thơ</button>
+                            <button onClick={() => setPlace('Phan thiết')}>Phan Thiết</button>
+                            <button onClick={() => setPlace('Đà lạt')}>Đà Lạt</button>
+                            <button onClick={() => setPlace('Nha trang')}>Nha Trang</button>
                         </div>
                     </div>
                 </div>
